@@ -10,43 +10,16 @@
 	"description": "Material Design Styles",
 
 	"permissions": [
-		"tabs", "<all_urls>",
-		"storage"
+		"tabs", "<all_urls>"
 	],
-
-	"background": {
-		"scripts": ["js/background.js"],
-		"persistent": true
-	},
-
-	"browser_action": {
-		"default_icon": {
-			"19": "img/icons/notfound/icon_19.png",
-			"38": "img/icons/notfound/icon_38.png"
-		},
-		"default_title": "Popup",
-		"default_popup": "popup.html"
-	},
 
 	"content_scripts": [
 		{
-			"matches": ["<all_urls>"],
-			"js": [
-					"/js/external/jquery.js",
-					"/js/external/waves.min.js",
-					"/js/content_script.js"
-				],
-			"css" : ["css/external/waves.min.css"],
-			"matches": ["http://www.w3schools.com/*"],
-			"run_at": "document_end",
-			"css" : ["css/www.w3schools.com.css"]
+			"matches": ["*://dribbble.com/*"],
+			"css" : ["css/dribbble.css", "/css/waves.min.css"],
+			"js" : ["js/dribbble.js", "/js/waves.min.js"],
+			"run_at": "document_start"
 		}
-	],
-
-	"web_accessible_resources": [
-		"img/*",
-		"css/*",
-		"js/*"
 	],
 
 	"manifest_version": 2
