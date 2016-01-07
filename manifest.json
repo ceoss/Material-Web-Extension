@@ -13,11 +13,20 @@
 		"tabs", "<all_urls>"
 	],
 
+	"web_accessible_resources": [
+		"/img/*"
+	],
+
 	"content_scripts": [
 		{
 			"matches": ["*://dribbble.com/*"],
-			"css" : ["css/dribbble.css", "/css/waves.min.css"],
-			"js" : ["js/dribbble.js", "/js/waves.min.js"],
+			"css" : ["/css/component/sidenav.css", "/css/font/roboto.css", "/css/library/waves.min.css", "/css/dribbble.css"],
+			"js" : ["/js/library/waves.min.js", "/js/component/sidenav.js", "/js/component/material-icons.js", "/js/dribbble.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://manager.linode.com/*"],
+			"css" : ["/css/component/sidenav.css", "/css/font/roboto.css", "/css/library/waves.min.css", "/css/linode.css"],
 			"run_at": "document_start"
 		}
 	],
