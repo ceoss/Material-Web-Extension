@@ -110,6 +110,9 @@
 		});
 		Waves.attach(".hamburger", ["waves-circle", "waves-light"]);
 		Waves.attach(".full-tabs-links > li > a", ["waves-light"]);
+		document.addEventListener("dragstart", function() {
+			Waves.calm(".waves-effect");
+		});
 
 		// Subtitle
 		var subtitle = document.createElement("span");

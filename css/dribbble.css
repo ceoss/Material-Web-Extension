@@ -500,6 +500,19 @@ body#teams-signup #header {
 }
 
 
+/* New Activity Indicator */
+/*#nav .new-activity {
+    position: relative !important;
+    top: 16px !important;
+    right: 0 !important;
+    width: 10px !important;
+    height: 10px !important;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url(/assets/act-dot-8557f9c1a2fe32aaf5ec23e03aa3c1a0.png);
+}*/
+
 /* Popups */
 
 #nav li ul.tabs {
@@ -697,8 +710,8 @@ ul.activity-mini li em.time {
 /* Tabs */
 
 .full-tabs {
-	min-height: 48px !important;
-	height: 48px !important;
+	min-height: 64px !important;
+	height: 64px !important;
 	background: #ea4c89 !important;
 	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
 	-webkit-user-select: none;
@@ -708,8 +721,8 @@ ul.activity-mini li em.time {
 }
 
 .full-tabs-links > li > a {
-	height: 48px !important;
-	line-height: 48px !important;
+	height: 64px !important;
+	line-height: 64px !important;
 	text-transform: uppercase;
 	font-weight: 500;
 	font-family: 'Roboto', sans-serif;
@@ -722,6 +735,7 @@ ul.activity-mini li em.time {
 .full-tabs-links > li.active > a {
 	color: #fff !important;
 	border-bottom: 2px solid #fafafa !important;
+	top: 0 !important; 
 }
 
 .full-tabs-links > li > a:hover,
@@ -744,7 +758,7 @@ div.full-tabs ul.full-tabs-links > li {
 	color: #fff !important;
 	width: 24px;
 	height: 24px;
-	margin: 0 !important;
+	margin: 8px 0 !important;
 	padding: 12px !important;
 	border-radius: 50% !important;
 	box-shadow: none !important;
@@ -820,17 +834,48 @@ div.the-shot div.single {
 	background: #fff !important;
 	border: 0 !important;
 	color: #fff !important;
-	padding: 24px;
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
 	margin-top: 0 !important;
+	padding: 24px !important;
+    margin-left: 480px !important;
 }
 
-.tag > a {
-	border-radius: 2px !important;
-	background: #ea4c89 !important;
-	border: 0 !important;
-	color: #fff !important;
+.tag {
+	background: #e0e0e0 !important;
+	box-shadow: none !important;
+	height: 32px !important;
+	margin: 2px !important;
+    border-radius: 16px !important;
+    transition: box-shadow .3s ease, background .3s ease;
+}
+.tag:hover {
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
+}
+.tag:active {
+	background: #d6d6d6 !important;
+}
+.tag > a {
+	color: rgba(0,0,0,.87) !important;
+	height: 32px !important;
+	line-height: 32px !important;
+	padding: 0 16px;
+	font-size: 13px;
+}
+
+/* Pink Override (Until I know which I like) */
+.tag {
+	background: #ea4c89 !important;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
+}
+.tag:hover {
+	background: #f06292 !important;
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4) !important;
+}
+.tag:active {
+	background: #ea4c89 !important;
+}
+.tag > a {
+	color: #fff !important;
 }
 
 
