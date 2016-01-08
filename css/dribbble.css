@@ -194,17 +194,14 @@ body#teams-signup #header {
 /* New Activity Indicator */
 
 
-/*#nav .new-activity {
-    position: relative !important;
+#nav .new-activity {
     top: 16px !important;
-    right: 0 !important;
-    width: 10px !important;
-    height: 10px !important;
-    text-indent: -9999px;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-image: url(/assets/act-dot-8557f9c1a2fe32aaf5ec23e03aa3c1a0.png);
-}*/
+    right: 52px !important;
+    width: 8px !important;
+    height: 8px !important;
+	background: #fff !important;
+	border-radius: 50%;
+}
 
 
 /* Popups */
