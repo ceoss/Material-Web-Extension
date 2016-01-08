@@ -192,6 +192,8 @@ body#teams-signup #header {
 
 
 /* New Activity Indicator */
+
+
 /*#nav .new-activity {
     position: relative !important;
     top: 16px !important;
@@ -203,6 +205,7 @@ body#teams-signup #header {
     background-position: 0 0;
     background-image: url(/assets/act-dot-8557f9c1a2fe32aaf5ec23e03aa3c1a0.png);
 }*/
+
 
 /* Popups */
 
@@ -255,7 +258,9 @@ ul.activity-mini li em.time {
 	background: rgba(33, 33, 33, .1);
 }
 
+
 /* Side Nav */
+
 #sidenav-header {
 	height: 300px;
 	background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, .4) 70%), url("https://d13yacurqjgara.cloudfront.net/users/1/screenshots/1792880/logo-final.png");
@@ -290,7 +295,7 @@ ul.activity-mini li em.time {
 .full-tabs-links > li.active > a {
 	color: #fff !important;
 	border-bottom: 2px solid #fafafa !important;
-	top: 0 !important; 
+	top: 0 !important;
 }
 
 .full-tabs-links > li > a:hover,
@@ -392,45 +397,33 @@ div.the-shot div.single {
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
 	margin-top: 0 !important;
 	padding: 24px !important;
-    margin-left: 480px !important;
+	margin-left: 480px !important;
 }
 
 .tag {
-	background: #e0e0e0 !important;
+	background: #ea4c89 !important;
 	box-shadow: none !important;
 	height: 32px !important;
 	margin: 2px !important;
-    border-radius: 16px !important;
-    transition: box-shadow .3s ease, background .3s ease;
+	border-radius: 16px !important;
+	transition: box-shadow .3s ease, background .3s ease;
 }
+
 .tag:hover {
+	background: #f06292 !important;
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
 }
+
 .tag:active {
-	background: #d6d6d6 !important;
+	background: #ea4c89 !important;
 }
+
 .tag > a {
-	color: rgba(0,0,0,.87) !important;
+	color: #fff !important;
 	height: 32px !important;
 	line-height: 32px !important;
 	padding: 0 16px;
 	font-size: 13px;
-}
-
-/* Pink Override (Until I know which I like) */
-.tag {
-	background: #ea4c89 !important;
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
-}
-.tag:hover {
-	background: #f06292 !important;
-	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4) !important;
-}
-.tag:active {
-	background: #ea4c89 !important;
-}
-.tag > a {
-	color: #fff !important;
 }
 
 
@@ -570,6 +563,7 @@ body#players #main.main-search:not(.main-full) {
 	color: rgba(0, 0, 0, .87) !important;
 	padding: 12px;
 }
+
 .faq {
 	border-radius: 2px !important;
 	background: #fff !important;
