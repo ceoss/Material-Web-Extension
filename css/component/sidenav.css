@@ -87,8 +87,7 @@
 .sidenav-item {
 	width: 100%;
 	line-height: 48px;
-	overflow: hidden;
-	text-overflow: ellipsis;
+	overflow: auto;
 }
 
 .sidenav-item > a,
@@ -99,7 +98,15 @@
 	transition: background .3s ease, color .3s ease;
 	float: left;
 }
-
+.sidenav-item > a > span,
+.sidenav-item > span > span,
+.sidenav-item-sub > a > span {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: calc(100% - 84px);
+	display: inline-block;
+	float: left;
+}
 .sidenav-item:hover > a,
 .sidenav-item.active > a,
 .sidenav-item:hover > span,
@@ -124,7 +131,8 @@
 	color: rgba(0, 0, 0, .87) !important;
 }
 
-.sidenav-item > a > .material-icons {
+.sidenav-item > a > .material-icons,
+.sidenav-item > span > .material-icons {
 	float: left;
 }
 
