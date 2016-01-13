@@ -260,7 +260,7 @@ ul.activity-mini li em.time {
 
 #mw-sideNav-header {
 	height: 300px;
-	background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, .4) 70%), url("https://d13yacurqjgara.cloudfront.net/users/1/screenshots/1792880/logo-final.png");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, .4) 70%), url("https://d13yacurqjgara.cloudfront.net/users/1/screenshots/1792880/logo-final.png");
 }
 .mw-sideNav-subItems > .mw-sideNav-item > a,
 .mw-sideNav-subItems > .mw-sideNav-item > span {
