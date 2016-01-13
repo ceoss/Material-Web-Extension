@@ -4,6 +4,7 @@
 	function sideNav() {
 		materialWeb.sideNav.toggle();
 	}
+
 	function setSubtitle() {
 		var subtitle;
 		var id = document.body.id;
@@ -107,7 +108,213 @@
 		var name = profile.children[0].children[1].textContent;
 		var username = profile.children[0].href.replace(/https:\/\/dribbble\.com\//i, "");
 		var profileImg = profile.children[0].children[0].src.replace(/\/mini\//i, "\/normal\/");
-		materialWeb.sideNav.add(null, profileImg, name, username);
+		materialWeb.sideNav.add({
+			"type": "temporary",
+			"header": {
+				"enable": true,
+				"text": {
+					"enable": true,
+					"title": name,
+					"subtitle": username
+				}
+			},
+			"account": {
+				"enable": true,
+				"img": profileImg
+			},
+			"navigation": {
+				"enable": true,
+				"items": [
+					{
+						"title": "Home",
+						"icon": "&#xE88A;",
+						"href": "/"
+					},
+					{
+						"title": "Shots",
+						"icon": "&#xE3B6;",
+						"href": "/shots",
+						"sub": [
+							{
+								"title": "Popular",
+								"href": "https://dribbble.com/shots"
+							},
+							{
+								"title": "Recent",
+								"href": "/shots?sort=recent"
+							},
+							{
+								"title": "Teams",
+								"href": "/shots?list=teams"
+							},
+							{
+								"title": "Debuts",
+								"href": "/shots?list=debuts"
+							},
+							{
+								"title": "Playoffs",
+								"href": "/shots?list=playoffs"
+							},
+							{
+								"title": "Animated GIFs",
+								"href": "/shots?list=animated"
+							}
+						]
+					},
+					{
+						"title": "Designers",
+						"icon": "&#xE7FD;",
+						"href": "/designers",
+						"sub": [
+							{
+								"title": "All",
+								"href": "/designers"
+							},
+							{
+								"title": "For Hire",
+								"href": "/designers?for_hire=true"
+							},
+							{
+								"title": "Top Skills &amp; Locations",
+								"href": "/designers/overview"
+							},
+							{
+								"title": "Skills",
+								"href": "/skills"
+							},
+							{
+								"title": "Cities",
+								"href": "/cities"
+							},
+							{
+								"title": "Countries",
+								"href": "/countries"
+							},
+							{
+								"title": "Prospects",
+								"href": "/designers/prospects"
+							}
+						]
+					},
+					{
+						"title": "Teams",
+						"icon": "&#xE7FB;",
+						"href": "/teams",
+						"sub": [
+							{
+								"title": "All",
+								"href": "/teams"
+							},
+							{
+								"title": "Now Hiring",
+								"href": "/teams?hiring=on"
+							},
+							{
+								"title": "Create a Team",
+								"href": "/teams/info"
+							}
+						]
+					},
+					{
+						"title": "Stories",
+						"icon": "&#xE865;",
+						"href": "/stories",
+					},
+					{
+						"title": "Meetups",
+						"icon": "&#xE56A;",
+						"href": "/meetups",
+						"sub": [
+							{
+								"title": "Meetups",
+								"href": "/meetups"
+							},
+							{
+								"title": "Host a Meetup",
+								"href": "/meetups/new"
+							}
+						]
+					},
+					{
+						"title": "Shop",
+						"icon": "&#xE8CC;",
+						"href": "/goods",
+						"sub": [
+							{
+								"title": "Goods by Designers",
+								"href": "/goods"
+							},
+							{
+								"title": "Deals for Designers",
+								"href": "/deals"
+							},
+							{
+								"title": "Dribbble Shop",
+								"href": "http://shop.dribbble.com/"
+							}
+						]
+					},
+					{
+						"title": "Jobs",
+						"icon": "&#xE8F9;",
+						"href": "/jobs",
+						"sub": [
+							{
+								"title": "All",
+								"href": "/jobs"
+							},
+							{
+								"title": "Remote / Anywhere",
+								"href": "/jobs?location=Anywhere"
+							},
+							{
+								"title": "@ Teams",
+								"href": "/jobs?teams_only=true"
+							},
+							{
+								"title": "Post a Job",
+								"href": "/jobs/info"
+							}
+						]
+					},
+					{
+						"title": "More",
+						"icon": "&#xE5D3;",
+						"subOnly": true,
+						"sub": [
+							{
+								"title": "Highlights",
+								"href": "/highlights"
+							},
+							{
+								"title": "Projects",
+								"href": "/projects"
+							},
+							{
+								"title": "Buckets",
+								"href": "/buckets"
+							},
+							{
+								"title": "Colors",
+								"href": "/colors"
+							},
+							{
+								"title": "Tags",
+								"href": "/tags"
+							},
+							{
+								"title": "About",
+								"href": "/about"
+							},
+							{
+								"title": "Integrations",
+								"href": "/integrations"
+							}
+						]
+					},
+				]
+			}
+		});
 
 		// Waves
 		Waves.attach(".infinite", ["waves-block", "waves-light"]);
@@ -122,7 +329,6 @@
 				childList: true
 			};
 			observer.observe(target, config);
-			// observer.disconnect();
 		}
 	}
 
