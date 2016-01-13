@@ -5,6 +5,10 @@
 		materialWeb.sideNav.toggle();
 	}
 
+	function titleCase(text) {
+		return text.replace(/\w\S*/g, function(match) {return match.charAt(0).toUpperCase() + match.substr(1).toLowerCase();});
+	}
+
 	function setSubtitle() {
 		var subtitle;
 		var id = document.body.id;
@@ -37,9 +41,7 @@
 			subtitle = "Shot";
 		} else {
 			// Readable ID
-			subtitle = id.replace(/[-_]+/g, " ").replace(/\w\S*/g, function(txt) {
-				return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-			});
+			subtitle = titleCase(id.replace(/[-_]+/g, " "));
 		}
 
 		// By URL Override
@@ -98,8 +100,29 @@
 		var search = document.createElement("form");
 		search.action = "https://dribbble.com/search";
 		search.classList.add("search");
-		search.innerHTML = "<i class=\"material-icons\">&#xE8B6;</i><input type=\"text\" name=\"q\" placeholder=\"Search\" value=\"\">"
+		search.innerHTML = "<i class=\"material-icons\">&#xE8B6;</i><input type=\"text\" name=\"q\" placeholder=\"Search\">"
 		header.insertBefore(search, document.getElementById("header-inner"));
+		var searchInput = search.children[1];
+		// searchInput onfocus and onchange add event listener for suggestions
+
+		var searchRegex = /(https?:\/\/)?dribbble.com\/search\?q=(.+)/i;
+		if (searchRegex.test(document.URL)) {
+			var searchQuery = titleCase(decodeURIComponent(searchRegex.exec(document.URL)[2]).replace(/\+/g, " "));
+
+			// Cookie
+			var searchCookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)mw-searches\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+			if (searchCookieValue.length > 0) {
+				var searchedBefore =  searchCookieValue.split(", ").indexOf(searchQuery);
+				if (searchedBefore === -1) {
+					document.cookie = "mw-searches=" + searchCookieValue + ", " + searchQuery + "; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+				}
+			} else {
+				document.cookie = "mw-searches=" + searchQuery + "; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+			}
+
+			// Show in Search Bar
+			searchInput.value = searchQuery;
+		}
 	}
 
 	function initWrap() {
