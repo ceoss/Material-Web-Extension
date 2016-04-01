@@ -360,7 +360,7 @@
 		if (document.getElementsByClassName("hero")[0] || document.getElementsByClassName("full-tabs")[0]) {
 			header.classList.remove("shadow");
 			window.onscroll = function() {
-				if (document.body.scrollTop === 0) {
+				if (document.body.scrollTop === 0 && document.documentElement.scrollTop === 0) {
 					header.classList.remove("shadow");
 				} else {
 					header.classList.add("shadow");

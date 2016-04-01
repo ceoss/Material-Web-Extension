@@ -14,7 +14,7 @@ body {
 	height: 64px !important;
 	background: #ea4c89 !important;
 	box-shadow: none;
-	position: fixed;
+	position: fixed !important;
 	top: 0;
 	-webkit-user-select: none;
 	user-select: none;
@@ -311,7 +311,7 @@ ul.activity-mini li em.time {
 }
 
 div.full-tabs ul.full-tabs-links > li {
-	margin: 0 12px 0 0 !important;
+	margin: 0 !important;
 }
 
 
