@@ -100,7 +100,7 @@
 		var search = document.createElement("form");
 		search.action = "https://dribbble.com/search";
 		search.classList.add("search");
-		search.innerHTML = "<i class=\"material-icons\">&#xE8B6;</i><input type=\"text\" name=\"q\" placeholder=\"Search\">"
+		search.innerHTML = "<i class=\"material-icons\">&#xE8B6;</i><input type=\"text\" name=\"q\" placeholder=\"Search\">";
 		header.insertBefore(search, document.getElementById("header-inner"));
 		var searchInput = search.children[1];
 		// searchInput onfocus and onchange add event listener for suggestions

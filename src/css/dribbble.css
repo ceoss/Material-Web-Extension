@@ -587,3 +587,31 @@ body#players #main.main-search:not(.main-full) {
 	box-shadow: rgba(0, 0, 0, 0.137255) 0px 2px 2px 0px, rgba(0, 0, 0, 0.117647) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px;
 	color: rgba(0, 0, 0, .87) !important;
 }
+
+
+.dribbble-img img {
+	animation: material-img-load 2s cubic-bezier(0,.8,.8,.8);
+}
+
+@keyframes material-img-load {
+	from {
+		opacity: 0;
+		-webkit-filter: opacity(0) brightness(2) saturate(20%);
+		        filter: opacity(0) brightness(2) saturate(20%);
+	}
+
+	50% {
+		-webkit-filter: opacity(1) brightness(1) saturate(60%);
+		        filter: opacity(1) brightness(1) saturate(60%);
+	}
+
+	75% {
+		-webkit-filter: opacity(1) brightness(1) saturate(80%);
+		        filter: opacity(1) brightness(1) saturate(80%);
+	}
+
+	to {
+		-webkit-filter: opacity(1) brightness(1) saturate(100%);
+		        filter: opacity(1) brightness(1) saturate(100%);
+	}
+}

@@ -1,0 +1,129 @@
+/* Global */
+
+body {
+	font-family: 'Roboto', sans-serif !important;
+	background-color: #e0e0e0 !important;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+	margin-top: 64px !important;
+}
+
+
+/* Appbar / Header */
+
+nav._onabe {
+	height: 64px !important;
+	background: #125688 !important;
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+	border: none !important;
+	padding: 0 24px !important;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	-webkit-user-select: none;
+	user-select: none;
+}
+._6v8vp {
+	height: 64px !important;
+	padding: 20px 0 !important;
+	max-width: none !important;
+}
+
+/* Search */
+._9pxkq._icv3j {
+	height: 40px;
+	position: fixed;
+	top: 12px;
+	left: 200px;
+	right: 200px;
+	max-width: 800px;
+	margin: auto;
+}
+
+._9pxkq._icv3j > input {
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border: none;
+	color: #fff;
+	padding: 8px 72px;
+	font-size: 16px;
+	box-sizing: border-box;
+	background: rgba(255, 255, 255, .2);
+	transition: background 0.3s ease;
+	border-radius: 2px;
+}
+
+._t1y9a._98hun {
+	display: none;
+}
+
+._9pxkq._icv3j > i.material-icons {
+	position: fixed;
+	top: 20px;
+	color: #fff;
+	padding-left: 24px;
+}
+
+._9pxkq._icv3j input:focus {
+	background: rgba(255, 255, 255, .3);
+}
+
+._9pxkq._icv3j > input::-webkit-input-placeholder {
+	color: #fff;
+}
+
+._o1o4h {
+	position: fixed !important;
+	top: 64px !important;
+	left: 200px !important;
+	right: 200px !important;
+	width: unset !important;
+	max-width: 800px !important;
+	margin: auto !important;
+	border: none !important;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
+	border-radius: 0 0 2px 2px !important;
+}
+
+._o1o4h::after,
+._pnw2j,
+._n3dw7.coreSpriteSearchIcon {
+	display: none;
+}
+
+._q8rex {
+	max-height: 50vh !important;
+}
+
+/* White Sprite */
+.coreSpriteDesktopNavExplore,
+.coreSpriteDesktopNavActivity,
+.coreSpriteDesktopNavProfile,
+.coreSpriteDesktopNavLogoAndWordmark{
+	background-image: url("chrome-extension://__MSG_@@extension_id__/img/sprites/instagram-white.png") !important;
+}
+
+
+/* Posts & Elevated Objects */
+
+._8ab8k,
+._82fo9,
+._gs7sp,
+._cag6k,
+._s6b3o,
+._769lo,
+._22yr2,
+._57q29 {
+	border: none !important;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
+	border-radius: 2px !important;
+}
+._8ab8k,
+._gs7sp {
+	margin-bottom: 24px !important;
+}
+._jx516,
+._oyz6j {
+	padding-top: 24px !important;
+}
