@@ -29,12 +29,6 @@
 			"css" : ["/css/font/roboto.css", "/css/instagram.css"],
 			"js" : ["/js/component/material-icons.js", "/js/instagram.js"],
 			"run_at": "document_start"
-		},
-		{
-			"matches": ["*://manager.linode.com/*"],
-			"css" : ["/css/component/sidenav.css", "/css/font/roboto.css", "/css/library/waves.min.css", "/css/linode.css"],
-			"js" : ["/js/component/sidenav.js", "/js/component/material-icons.js", "/js/linode.js"],
-			"run_at": "document_start"
 		}
 	],
 
