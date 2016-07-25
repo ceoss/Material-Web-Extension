@@ -332,6 +332,10 @@
 							{
 								"title": "Integrations",
 								"href": "/integrations"
+							},
+							{
+								"title": "Support",
+								"href": "http://help.dribbble.com/"
 							}
 						]
 					},
