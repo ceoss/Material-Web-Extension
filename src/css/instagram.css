@@ -5,6 +5,7 @@ body {
 	background-color: #e0e0e0 !important;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-tap-highlight-color: transparent;
+	-webkit-font-smoothing: antialiased;
 	margin-top: 64px !important;
 }
 
@@ -25,8 +26,22 @@ nav._onabe {
 }
 ._6v8vp {
 	height: 64px !important;
-	padding: 20px 0 !important;
+	padding: 0 !important;
 	max-width: none !important;
+	background: none !important;
+	border-bottom: none !important;
+}
+._df358 {
+	max-width: unset !important;
+	padding: unset !important;
+}
+._1b8in {
+	top: 14.5px;
+	margin-top: 0 !important;
+	left: unset !important;
+}
+._nhei4 {
+	height: 64px !important;
 }
 
 /* Search */
