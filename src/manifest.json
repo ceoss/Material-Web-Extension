@@ -1,13 +1,13 @@
 {
 	"name": "Material Web",
-	"version": "0.1",
+	"version": "0.2.0",
 	"icons": { 
 		"16": "/img/icons/icon_16.png",
 		"48": "/img/icons/icon_48.png",
 		"128": "/img/icons/icon_128.png" 
 	},
 
-	"description": "Material Design Styles",
+	"description": "Content scripts that make websites more Material Design.",
 
 	"permissions": [
 		"tabs", "<all_urls>"
